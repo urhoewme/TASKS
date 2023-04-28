@@ -1,11 +1,10 @@
 <?php
-function removeElement($array, $position) {
+function removeElement($array, $position)
+{
     if ($position < 0 || $position >= count($array)) {
         return $array;
     }
-
     unset($array[$position]);
-
     $i = 0;
     foreach ($array as $key => $value) {
         if ($key !== $i) {
@@ -17,24 +16,12 @@ function removeElement($array, $position) {
     return $array;
 }
 
-function testTask($number) {
-    switch($number) {
-        case 1:
-            $array = [1,2,3,4,5];
-            $position = 1;
-            $result = removeElement($array,$position);
-            print_r($result);
-            break;
-        case 2:
-            $array = [1,2,3,4,5];
-            $position = 20;
-            $result = removeElement($array,$position);
-            print_r($result);
-            break;
-    }
-}
 
-$a = readline("Enter a number from 1-2: ");
-testTask($a);
-
-?>
+$array1 = [1,2,3,4,5];
+$position1 = 1;
+$result = removeElement($array1, $position1);
+print_r($result);
+$array2 = [1,2,3,4,5];
+$position2 = 20;
+$result = removeElement($array2, $position2);
+print_r($result);

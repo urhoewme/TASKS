@@ -1,10 +1,15 @@
 # TASK 4
-## функции для удаления элементов массива:
-+ unset(): удаляет элемент из массива по его ключу
-+ array_splice(): удаляет элементы из массива и возвращает массив, содержащий удаленные элементы
-+ array_pop(): удаляет и возвращает последний элемент массива
-+ array_shift(): удаляет и возвращает первый элемент массива
-## для минимизации затрат памяти лучше подходят:
-+ unset()
-+ array_filter()
-### они не создают новый массив и не используют доп память для хранения удаленных элементов
+
+## functions to delete array elements:
+
+- unset(): removes an element from the array by its key
+- array_splice(): removes elements from the array and returns an array containing the deleted elements
+- array_pop(): removes and returns the last element of the array
+- array_shift(): removes and returns the first element of the array
+
+## to minimize memory costs are better suited to:
+
+- unset()
+- array_filter()
+
+### they don't create a new array and don't use additional memory to store deleted items
