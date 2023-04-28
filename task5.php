@@ -1,15 +1,15 @@
 <?php
 
-function printNumbers($a, $B)
+function printNumbers($a, $b)
 {
-    if ($a == $B) {
+    if ($a == $b) {
         echo $a . " ";
-    } elseif ($a < $B) {
+    } elseif ($a < $b) {
         echo $a . " ";
-        printNumbers($a + 1, $B);
+        printNumbers($a + 1, $b);
     } else {
         echo $a . " ";
-        printNumbers($a - 1, $B);
+        printNumbers($a - 1, $b);
     }
 }
 
