@@ -1,5 +1,5 @@
 <?php
-function addDigits($num)
+function getDigitalRoot($num)
 {
     if (preg_match('/^0+$/', $num)) {
         return 0;
@@ -11,6 +11,6 @@ function addDigits($num)
     }
     return $num;
 }
-echo addDigits(000000000);
+echo getDigitalRoot(000000000);
 echo "\n";
-echo addDigits(129936683);
+echo getDigitalRoot(129936683);
