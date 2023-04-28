@@ -1,5 +1,7 @@
 # TASK 8
-## Магические методы
-Магические методы начинаются с двух символов _
-В случае данного таска был использован метод __construct() для инициализации строк и столбцов матрицы, а так же для зануления всех значений по умолчанию
-Магические методы используются при работе с объектами
+
+## Magic methods
+
+Magical methods begin with two characters \_
+In the case of this task, the \_\_construct() method was used to initialize matrix rows and columns, as well as to null all default values
+Magic methods are used when working with objects
