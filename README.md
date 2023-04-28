@@ -1,11 +1,11 @@
 # TASK 1
-## Отличия if-elseif-else, switch-case, ternary operator
-+ if - это условная конструкция, которая позволяет выполнять блок кода, если выражение возвращает true. Если выражение возвращает false, то блок кода не будет выполнен.
-+ switch - это условная конструкция, которая позволяет сравнить выражение с несколькими вариантами и выполнить соответствующий блок кода для первого соответствующего варианта.
-+ Тернарный оператор - это сокращенный способ записи if конструкции, который позволяет выбирать между двумя значениями в зависимости от результата выражения. Он имеет следующий синтаксис: условие ? значение1 : значение2.
+## Difference between if-elseif-else, switch-case, ternary operator
++ if - the code block will be executed if the condition is true. otherwise the code will not be executed.
++ switch - it's a construction that allows you to compare an expression with several variants and execute the corresponding block of code for the first corresponding variant
++ Тернарный оператор - is a shorthand way of writing an if construction that allows you to choose between two values depending on the result of the expression. It has the following syntax: condition ? value1 : value2.
 ## Nullish coalescing operator (??)
-это оператор, который возвращает левый операнд, если он не является null или undefined, в противном случае он возвращает правый операнд. Он позволяет проверять наличие значения и при этом не производит приведение к булевому типу.
+is an operator that returns the left operand unless it is null or undefined, otherwise it returns the right operand. It allows you to check if a value exists and does not perform a boolean type conversion.
 
-# Что лучше использовать в данном задании ?
-По-моему мнению, согласно условиям, заданным в текущем задании, лучше всего использовать конструкцию switch-case, т.к. мы имеем дело с множественным выбором
-Если бы количество вариантов было не таким большим, то отлично справился бы тернарный оператор
+# What's better ?
+In my opinion, according to the conditions set in the current task, it is best to use switch-case construction, since we are dealing with multiple choices
+If the number of choices were not so big, the ternary operator
