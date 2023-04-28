@@ -1,4 +1,4 @@
 # TASK 3
-## Методы для работы с массивами
-#### В данном таске я использовал метод array_sum для нахождения суммы элементов массива
-#### Для того чтобы преобразовать число в массив, я использовал метод str_split
+## Array methods
+In this task I used the array_sum() method to find the sum of the array elements
+I used the str_split() method to convert a number into an array
