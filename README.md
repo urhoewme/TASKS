@@ -1,8 +1,12 @@
 # TASK 7
+
 ## Regex
-Это определенные шаблоны для поиска, замены и обработки текста
+
+These are specific templates for finding, replacing, and processing text
+
 ## Regex methods:
-+ preg_match($pattern, $subject, &$matches) - ищет первое вхождение паттерна в строке и соответствия сохраняет в массив мэтчей
-+ preg_match_all($pattern, $subject, &$matches) - ищет все вхождения и сохраняет их в массив, возвращает количество соответствий
-+ preg_replace($pattern, $replacement, $subject) - заменяет все вхождения паттерна в строку на реплейсмент
-+ preg_split($pattern, $subject) - разбивает строку используя паттерн как разделитель
+
+- preg_match($pattern, $subject, &$matches) - searches for the first occurrence of the pattern in the string and saves the matches in an array of matches
+- preg_match_all($pattern, $subject, &$matches) - searches for all occurrences and saves them into an array, returns the number of matches
+- preg_replace($pattern, $replacement, $subject) - replaces all occurrences of the pattern in the string by a replay
+- preg_split($pattern, $subject) - breaks the string using pattern as a separator
