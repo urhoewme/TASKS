@@ -15,8 +15,6 @@ function removeElement($array, $position)
     }
     return $array;
 }
-
-
 $array1 = [1,2,3,4,5];
 $position1 = 1;
 $result = removeElement($array1, $position1);
