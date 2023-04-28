@@ -1,6 +1,6 @@
 # TASK 2
-## Функции для работы с датой в PHP
-+ date() - форматирует дату и время в соответствии с заданным форматом
-+ time() - возвращает время в секундах начиная с 1 января 1970 года
-+ strtotime() - преобразует строку с датой и временем в Unix формат
-+ date_diff() - вычисляет разницу между двумя датами
+## PHP functions to work with data:
++ date() - formats the date and time according to the specified format
++ time() - returns the time in seconds from January 1, 1970
++ strtotime() - converts a string with date and time to Unix format
++ date_diff() - calculates the difference between two dates
