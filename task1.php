@@ -1,70 +1,46 @@
 <?php
-function isGreaterIf($number) {
+function classifyNumberRangeIf($number)
+{
     if($number > 30) {
-        echo "More than 30\n";
-    }
-    elseif($number > 20) {
-        echo "More than 20\n";
-    }
-    elseif($number > 10) {
-        echo "More than 10\n";
-    }
-    else {
-        echo "Equal or less than 10\n";
+        return "More than 30\n";
+    } elseif($number > 20) {
+        return "More than 20\n";
+    } elseif($number > 10) {
+        return "More than 10\n";
+    } else {
+        return "Equal or less than 10\n";
     }
 }
-
-function isGreaterSwitch($number) {
+function classifyNumberRangeSwitch($number)
+{
     switch(true) {
         case ($number > 30):
-            echo "More than 30\n";
-            break;
+            return "More than 30\n";
         case ($number > 20):
-            echo "More than 20\n";
-            break;
+            return "More than 20\n";
         case ($number > 10):
-            echo "More than 10\n";
-            break;
+            return "More than 10\n";
         default:
-            echo "Equal or less than 10\n";
-            break;
+            return "Equal or less than 10\n";
     }
 }
-
-function isGreaterTernary($number) {
-    echo $number>30 ? "More than 30" : ($number>20 ? "More than 20" : ($number>10 ? "More than 10" : "Equal or less than 10"));
+function classifyNumberRangeTernary($number)
+{
+    return $number>30 ? "More than 30" : ($number>20 ? "More than 20" : ($number>10 ? "More than 10" : "Equal or less than 10"));
 }
-
-function testValues($number) {
-    switch($number) {
-        case 1:
-            isGreaterIf(0);
-            isGreaterSwitch(15);
-            isGreaterTernary(25);
-            break;
-        case 2:
-            isGreaterIf(25);
-            isGreaterSwitch(0);
-            isGreaterTernary(15);
-            break;
-        case 3:
-            isGreaterIf(-10);
-            isGreaterSwitch(25);
-            isGreaterTernary(0);
-            break;
-        case 4:
-            isGreaterIf('a');
-            isGreaterSwitch(35);
-            isGreaterTernary(135);
-            break;
-        case 5:
-            isGreaterIf(36);
-            isGreaterSwitch('a');
-            isGreaterTernary('b');
-            break;
-    }
-}
-
-$a = readline("Enter a number from 1 to 5: ");
-testValues($a);
-?>
+echo classifyNumberRangeIf(0);
+echo classifyNumberRangeSwitch(15);
+echo classifyNumberRangeTernary(25);
+echo "\n";
+echo classifyNumberRangeIf(25);
+echo classifyNumberRangeSwitch(0);
+echo classifyNumberRangeTernary(15);
+echo "\n";
+echo classifyNumberRangeIf(-10);
+echo classifyNumberRangeSwitch(25);
+echo classifyNumberRangeTernary(0);
+echo "\n";
+echo classifyNumberRangeSwitch(35);
+echo classifyNumberRangeTernary(135);
+echo "\n";
+echo classifyNumberRangeIf(36);
