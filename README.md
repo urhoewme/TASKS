@@ -1,17 +1,26 @@
 # TASK 9
-## Наследование:
-Позволяет перенимать методы и параметры классов
-Существуют такие понятия как:
-+ Родительский класс
-+ Дочерний класс
-## Интерфейсы:
-Интерфейс это контракт на выполнение метода. Определяет какие методы класс должен реализовать, и не важно, как именно они будут реализованы
-## Абстрактные классы:
-Абстрактный класс считается таковым, если имеет хотя бы один абстрактный метод
-На основе такого класса нельзя создавать объекты
-Абстрактный класс можно только наследовать
-## Отличия абстрактных классов от интерфейсов
-+ Интерфейс поддерживает множественное наследование, в отличии от А класса
-+ Интерфейс содержит только объявление методов, но не их реализацию
-+ В интерфейсе все модификаторы доступа публичные
-+ В интерфейсе методы не могут быть статичными
+
+## Inheritance:
+
+Allows to adopt methods and parameters of classes
+There are such concepts as:
+
+- Parent class
+- Child class
+
+## Interfaces:
+
+An interface is a contract to execute a method. It defines which methods the class should implement, no matter how they are implemented
+
+## Abstract classes:
+
+An abstract class is considered such if it has at least one abstract method
+Objects cannot be created on the basis of such a class
+The abstract class can only be inherited
+
+## Differences between abstract classes and interfaces
+
+- An interface supports multiple inheritance, unlike the abstract class
+- The interface only contains declaration of methods, not their implementation
+- All access modifiers in the interface are public
+- Methods cannot be static in the interface
