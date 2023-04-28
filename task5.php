@@ -1,9 +1,8 @@
 <?php
-
 function printNumbers($a, $b)
 {
     if ($a == $b) {
-        echo $a . " ";
+        return $a . " ";
     } elseif ($a < $b) {
         echo $a . " ";
         printNumbers($a + 1, $b);
@@ -12,22 +11,10 @@ function printNumbers($a, $b)
         printNumbers($a - 1, $b);
     }
 }
-
-function testTask($number)
-{
-    switch ($number) {
-        case 1:
-            $a = 1;
-            $b = 7;
-            printNumbers($a, $b);
-            break;
-        case 2:
-            $a = -3;
-            $b = 2;
-            printNumbers($a, $b);
-            break;
-    }
-}
-
-$c = readline("Enter a number from 1-2: ");
-testTask($c);
+$a1 = 1;
+$b1 = 7;
+printNumbers($a1, $b1);
+echo "\n";
+$a2 = -3;
+$b2 = 2;
+printNumbers($a2, $b2);
